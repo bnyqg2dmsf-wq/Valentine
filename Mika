@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine 💘</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #ffe6e6;
+            padding: 50px;
+        }
+        h1 {
+            color: #ff4d4d;
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.2em;
+            color: #ff1a75;
+        }
+        button {
+            font-size: 20px;
+            padding: 12px 25px;
+            margin: 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        button:hover {
+            transform: scale(1.1);
+        }
+        .yes { background-color: #ff6666; color: white; }
+        .no { background-color: #cccccc; color: black; }
+    </style>
+</head>
+<body>
+
+    <h1>Will you be my Valentine? 💘</h1>
+    <p>I hope your answer makes my heart sparkle! ✨</p>
+
+    <button class="yes" onclick="showMessage('Yay! 💖 I’m so happy!')">Yes</button>
+    <button class="no" onclick="showMessage('Oh no! 😢 Maybe next time!')">No</button>
+
+    <p id="message" style="font-size:1.5em; color:#ff4d4d; margin-top:20px;"></p>
+
+    <audio id="bgMusic" autoplay loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        function showMessage(text) {
+            document.getElementById('message').innerText = text;
+        }
+    </script>
+
+</body>
+</html>
